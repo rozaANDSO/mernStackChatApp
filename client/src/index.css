@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url("./assets/imag.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @apply bg-fixed;
+  @apply h-screen;
+  @apply w-screen;
+  @apply flex;
+  @apply justify-center;
+}
+
+/* Dark mode scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Dark background */
+}
+
+::-webkit-scrollbar-thumb {
+  background:#0000; /* Dark gray thumb */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Lighter gray on hover */
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #1e1e1e;
+}
